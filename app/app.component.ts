@@ -13,6 +13,7 @@ export class AppComponent {
 
     title = 'My First Angular 2 App';
     name = 'jens';
+    surName = 'you dont know';
     jensColor = 'blue';
 
     changeColor() {
