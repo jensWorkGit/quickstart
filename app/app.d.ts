@@ -1,1 +1,1 @@
-declare var __moduleName; 
+declare var __moduleName: any;
