@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
-import {CustomerComponent} from './customer/customer.component';
+import {CustomersComponent} from './customer/customers.component';
 
 @Component({
+    moduleId: __moduleName,
     selector: 'my-app',
-    templateUrl: 'app/app.component.html',
-    directives: [CustomerComponent]
+    templateUrl: 'app.component.html',
+    directives: [CustomersComponent]
 })
 export class AppComponent {
 
@@ -15,15 +16,6 @@ export class AppComponent {
     name = 'jens';
     surName = 'you dont know';
     jensColor = 'blue';
-
-    customers = [
-        { id: 1, name: 'Ward' },
-        { id: 2, name: 'Kevin' },
-        { id: 3, name: 'Eric' },
-        { id: 4, name: 'Sally' },
-        { id: 5, name: 'Emmet' }
-    ];
-
 
     changeColor() {
         this.jensColor = (this.jensColor === 'blue') ?
