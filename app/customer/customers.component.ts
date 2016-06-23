@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerComponent } from './customer.component';
+import { CustomerService } from './customer.service';
 
 @Component({
     moduleId: module.id,
@@ -8,16 +9,15 @@ import { CustomerComponent } from './customer.component';
     directives: [CustomerComponent]
 })
 export class CustomersComponent implements OnInit {
-    customers = [
-        { id: 1, name: 'Ward' },
-        { id: 2, name: 'Kevin' },
-        { id: 3, name: 'Eric' },
-        { id: 4, name: 'Sally' },
-        { id: 5, name: 'Emmet' }
-    ];
+    customers: any[];
+    private _customerService: CustomerService;
 
-    constructor() { }
+    constructor(customerService: CustomerService) {
+        this._customerService = customerService;
+    }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.customers = this._customerService.getCustomer();
+    }
 
 }
