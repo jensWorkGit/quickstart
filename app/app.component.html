@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
-        <div [style.color]="jensColor">
-            Hello {{name}}
-        </div>
-        bl
-        <button (click)="changeColor()">change color</button>
+<div [style.color]="jensColor">
+    Hello {{name}}
+</div>
+<input type="text" [value]="name" (keyup)="name = $event.target.value">
+<button (click)="changeColor()">change color</button>
