@@ -6,14 +6,13 @@ import { CustomerService } from './customer.service';
     moduleId: module.id,
     selector: 'app-customers',
     templateUrl: 'customers.component.html',
-    directives: [CustomerComponent]
+    directives: [CustomerComponent],
+    providers: [CustomerService]
 })
 export class CustomersComponent implements OnInit {
     customers: any[];
-    private _customerService: CustomerService;
 
-    constructor(customerService: CustomerService) {
-        this._customerService = customerService;
+    constructor(private _customerService: CustomerService) {
     }
 
     ngOnInit() {
