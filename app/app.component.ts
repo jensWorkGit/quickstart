@@ -20,4 +20,6 @@ export class AppComponent {
         this.jensColor = (this.jensColor === 'blue') ?
             'green' : 'green';
     }
+
+
 }
