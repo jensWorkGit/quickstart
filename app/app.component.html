@@ -11,7 +11,7 @@
 <br />
 
 <ul>
-    <li>kevin</li>
+    <li *ngFor="#customer of customers">
+        {{customer.id}} - {{customer.name}}
+    </li>
 </ul>
-
-

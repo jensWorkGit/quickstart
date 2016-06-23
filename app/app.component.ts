@@ -16,6 +16,15 @@ export class AppComponent {
     surName = 'you dont know';
     jensColor = 'blue';
 
+    customers = [
+        {id: 1, name: 'Ward'},
+        {id: 2, name: 'Kevin'},
+        {id: 3, name: 'Eric'},
+        {id: 4, name: 'Sally'},
+        {id: 5, name: 'Emmet'}
+    ];
+
+
     changeColor() {
         this.jensColor = (this.jensColor === 'blue') ?
             'green' : 'green';
