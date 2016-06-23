@@ -30,7 +30,7 @@ describe('AppComponent with TCB', function () {
     async(inject([TestComponentBuilder], (tcb: TestComponentBuilder) => {
 
     tcb.createAsync(AppComponent).then(fixture => {
-      expect(fixture.componentInstance instanceof AppComponent).toBe(true, 'should create AppComponent');
+      expect(fixture.componentInstance instanceof AppComponent).toBe(true, 'should create AppComponentg');
     });
   })));
 
