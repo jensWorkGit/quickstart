@@ -2,7 +2,6 @@ npm start
 
 or 
 
-
 & "C:\Program Files\Docker Toolbox\docker-machine.exe" env default | Invoke-Expression
 npm run docker
 
