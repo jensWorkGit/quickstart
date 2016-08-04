@@ -1,26 +1,7 @@
 import { Component } from '@angular/core';
 
-// import { CustomerService } from './customer/customer.service';
-// import { CustomersComponent } from './customer/customers.component';
-
-// here is my barrel // future i would just import './customer'
-import { CustomersComponent, CustomerService } from './customer/index';
-
 @Component({
-  moduleId: module.id,
-  selector: 'my-app',
-  templateUrl: 'app.component.html',
-  directives: [CustomersComponent],
-  providers: [CustomerService]
+    selector: 'my-app',
+    template: '<h1>My First Angular 2 App</h1>'
 })
-export class AppComponent {
-  // [ ] means property binding - C to D
-  // ( ) means event binding - D to C
-  title = 'Customer App';
-  name = 'Ward';
-  wardsColor = 'green';
-
-  changeSuitColor() {
-    this.wardsColor = this.wardsColor === 'green' ? 'red' : 'green';
-  }
-}
+export class AppComponent { }
